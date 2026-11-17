@@ -1,16 +1,51 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Rivera - Accessible Web Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <header>
+        <h1 role="heading" aria-level="1">Alex Rivera</h1>
+        <nav role="navigation" aria-label="Main Navigation">
+            <ul role="list">
+                <li role="listitem"><a href="#about">About</a></li>
+                <li role="listitem"><a href="#projects">Projects</a></li>
+                <li role="listitem"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="profile-section">
+            <img role="img" src="profile.jpg" alt="Portrait of Alex Rivera smiling in front of a softly lit office background">
+            <p>
+                Hello! I am a front-end web developer passionate about building clean, inclusive, and accessible digital experiences that work seamlessly for everyone.
+            </p>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2>Featured Projects</h2>
+            <ul role="list">
+                <li role="listitem">
+                    <strong>Screen-Reader Friendly E-Commerce Store:</strong> Built a fully keyboard-navigable online shop with semantic markup and clear focus indicators.
+                </li>
+                <li role="listitem">
+                    <strong>High-Contrast Weather Dashboard:</strong> Designed a WCAG AAA-compliant weather app featuring customizable font sizes and color themes.
+                </li>
+                <li role="listitem">
+                    <strong>Interactive Task Manager:</strong> Created an accessible to-do application with live region announcements for screen reader users.
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>Get in touch: <a href="mailto:alex.rivera@example.com">alex.rivera@example.com</a></p>
+    </footer>
 
 </body>
-
 </html>
